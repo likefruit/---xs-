@@ -1,0 +1,49 @@
+#ifndef MFDACCINFO_H
+#define MFDACCINFO_H
+
+#include <QDialog>
+#include "mw.h"
+#if 0
+    str = "create table DACC (F0 int(10) primary key auto_increment, "
+            "F1 varchar(128) not null, " /* acc name*/
+            "F2 varchar(32) not null, " /* 电话号码 */
+            "F3 varchar(32) not null, " /* identify */
+            "F4 varchar(32), "               /*病区*/
+            "F5 varchar(32), "              /*科室*/
+            "F6 varchar(32), "              /* 床位 */
+            "F7 varchar(1024), "              /* 备注 */
+            "F8 int(10) not null, "             /* DCARD */
+            "F9 varchar(16) not null, "            /* 状态 */
+            "F10 double(9,2) default 0.0, "       /* 余额 */
+            "F11 double(9,2) default 0.0, "       /* 押金 */
+            "F12 varchar(16) , "                /* 结算方式 */
+            "F13 double(9,2) default 0.0)"      /* 结算金额 */
+            ;
+#endif
+
+class MFDAccInfo : public QDialog
+{
+    Q_OBJECT
+public:
+    explicit MFDAccInfo(QWidget *parent = 0);
+    QLineEdit* _name;
+    QLineEdit* _tele;
+    QLineEdit* _id;
+    QComboBox* _bingqu;
+    QComboBox* _keshi;
+    QComboBox* _chuangwei;
+    QLineEdit* _beizhu;
+    QLineEdit* _cardno;
+    QComboBox* _status;
+    QLineEdit* _yuee;
+    QLineEdit* _yajin;
+    QComboBox* _jisuanfangshi;
+    QLineEdit* _jiesuanjine;
+    
+signals:
+    
+public slots:
+    
+};
+
+#endif // MFDACCINFO_H

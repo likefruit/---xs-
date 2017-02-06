@@ -1,0 +1,16 @@
+
+读卡：显示卡内容，和订单信息，按确认到【选择功能窗口】，读卡界面按F2，F3显示周食谱
+选择：订餐/修改订单，取消整个订单，查询订单明细，即时消费
+    订餐/修改订单：进入编辑窗口，用户可以增加菜品，删除菜品，按确定进入写卡界面
+    取消整个订单：显示订单明细，按确认取消整个订单
+    查询订单明细：直接显示订单明细，按确认键，返回读卡
+    即时消费：立即购买订单
+    取消即时消费：显示提示信息，按确认写卡即可
+
+写卡：等待用户将卡贴近，写卡完毕，输出提示
+
+bug1: enter MD_BOOK need clear input ok
+bug2: int MD_BOOK, when F2 enter show WEEKFOOD inprogress
+bug3: int WRITECARD, C direct return READCARD, but TIPS not change ok
+bug4: 显示没有订餐，明明有订餐的啊
+bug5: md_set_last_order  ok

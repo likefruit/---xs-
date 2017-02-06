@@ -1,0 +1,5 @@
+#!/bin/sh
+make clean
+make
+cp maintest /nfs/
+make clean
